@@ -265,25 +265,18 @@ export default function LoginPage() {
           </div>
 
           {/* Demo credentials */}
-          <div className="mt-4 p-4 rounded-xl" style={{ backgroundColor: "#EFF6FF", border: "1px solid #DBEAFE" }}>
-            <p className="text-[11px] font-bold text-blue-700 mb-2 uppercase tracking-widest">
-              Credenciales de demostración
+          <div className="mt-4 px-3 py-2.5 rounded-lg" style={{ backgroundColor: "#F8FAFC", border: "1px solid #E2E8F0" }}>
+            <p className="text-[10.5px] text-muted-foreground">
+              <span className="font-medium">Acceso piloto: </span>
+              <span className="font-mono text-foreground/70">demo@molinoshiguamo.com</span>
+              <span className="mx-1.5 text-muted-foreground/40">·</span>
+              <span className="font-mono text-foreground/70">Demo2026</span>
             </p>
-            <div className="space-y-0.5">
-              <p className="text-[12px] text-blue-900">
-                <span className="text-blue-500 font-medium">Usuario: </span>
-                <span className="font-mono">demo@molinoshiguamo.com</span>
-              </p>
-              <p className="text-[12px] text-blue-900">
-                <span className="text-blue-500 font-medium">Contraseña: </span>
-                <span className="font-mono">Demo2026</span>
-              </p>
-            </div>
           </div>
         </div>
 
         <p className="mt-8 text-[11.5px] text-muted-foreground text-center">
-          © 2026 Molinos del Higuamo · MVP Ejecutivo RRHH v1.0
+          © 2026 Molinos del Higuamo · Sistema RRHH IA · Piloto Ejecutivo
         </p>
       </div>
     </div>

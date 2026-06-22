@@ -151,15 +151,15 @@ const activityCfg: Record<string, { color: string; bg: string }> = {
 export default function DashboardPage() {
   const today = new Intl.DateTimeFormat("es-DO", {
     weekday: "long", year: "numeric", month: "long", day: "numeric",
-  }).format(new Date("2026-06-22"));
+  }).format(new Date());
 
-  const hour = 9;
+  const hour = new Date().getHours();
   const greeting = hour < 12 ? "Buenos días" : hour < 18 ? "Buenas tardes" : "Buenas noches";
 
   const modules = [
     { label: "Reclutamiento",   value: "6 vacantes activas",     icon: Briefcase,     color: "#60A5FA", href: "/reclutamiento" },
     { label: "Inducción",       value: "3 nuevos ingresos",      icon: ClipboardList,  color: "#34D399", href: "/onboarding" },
-    { label: "Capacitación",    value: "176 inscritos",          icon: BookOpen,       color: "#F9A8D4", href: "/capacitacion" },
+    { label: "Capacitación",    value: "176 inscritos",          icon: BookOpen,       color: "#7DD3FC", href: "/capacitacion" },
     { label: "Desempeño",       value: "68% completado",         icon: BarChart2,      color: "#FDE68A", href: "/desempeno" },
     { label: "Comunicaciones",  value: "5 avisos esta semana",   icon: MessageSquare,  color: "#C4B5FD", href: "/comunicaciones" },
   ];
