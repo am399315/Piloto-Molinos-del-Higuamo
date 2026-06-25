@@ -91,14 +91,27 @@ export default function Sidebar({ open, onClose, collapsed, onToggleCollapse }: 
         >
           {/* Brand */}
           <div className="flex items-center gap-3 min-w-0">
-            <div
-              className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
-              style={{ backgroundColor: "#2563EB" }}
-            >
-              <svg viewBox="0 0 24 24" fill="none" className="w-[18px] h-[18px] text-white" stroke="currentColor" strokeWidth={2.5}>
-                <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                <path d="M2 17l10 5 10-5" />
-                <path d="M2 12l10 5 10-5" />
+            <div className="w-8 h-8 flex items-center justify-center flex-shrink-0">
+              <svg viewBox="0 0 100 110" fill="none" className="w-8 h-8 text-white" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="50" y1="50" x2="75" y2="25" strokeWidth="3.5"/>
+                <line x1="56" y1="44" x2="51" y2="39" strokeWidth="2.5"/><line x1="56" y1="44" x2="61" y2="49" strokeWidth="2.5"/>
+                <line x1="63" y1="37" x2="59" y2="33" strokeWidth="2.5"/><line x1="63" y1="37" x2="67" y2="41" strokeWidth="2.5"/>
+                <line x1="69" y1="31" x2="66" y2="28" strokeWidth="2"/><line x1="69" y1="31" x2="72" y2="34" strokeWidth="2"/>
+                <line x1="50" y1="50" x2="25" y2="25" strokeWidth="3.5"/>
+                <line x1="44" y1="44" x2="49" y2="39" strokeWidth="2.5"/><line x1="44" y1="44" x2="39" y2="49" strokeWidth="2.5"/>
+                <line x1="37" y1="37" x2="41" y2="33" strokeWidth="2.5"/><line x1="37" y1="37" x2="33" y2="41" strokeWidth="2.5"/>
+                <line x1="31" y1="31" x2="34" y2="28" strokeWidth="2"/><line x1="31" y1="31" x2="28" y2="34" strokeWidth="2"/>
+                <line x1="50" y1="50" x2="75" y2="75" strokeWidth="3.5"/>
+                <line x1="56" y1="56" x2="61" y2="51" strokeWidth="2.5"/><line x1="56" y1="56" x2="51" y2="61" strokeWidth="2.5"/>
+                <line x1="63" y1="63" x2="67" y2="59" strokeWidth="2.5"/><line x1="63" y1="63" x2="59" y2="67" strokeWidth="2.5"/>
+                <line x1="69" y1="69" x2="72" y2="66" strokeWidth="2"/><line x1="69" y1="69" x2="66" y2="72" strokeWidth="2"/>
+                <line x1="50" y1="50" x2="25" y2="75" strokeWidth="3.5"/>
+                <line x1="44" y1="56" x2="39" y2="51" strokeWidth="2.5"/><line x1="44" y1="56" x2="49" y2="61" strokeWidth="2.5"/>
+                <line x1="37" y1="63" x2="33" y2="59" strokeWidth="2.5"/><line x1="37" y1="63" x2="41" y2="67" strokeWidth="2.5"/>
+                <line x1="31" y1="69" x2="28" y2="66" strokeWidth="2"/><line x1="31" y1="69" x2="34" y2="72" strokeWidth="2"/>
+                <path d="M 47 50 Q 40 74 33 100" strokeWidth="3.5"/>
+                <path d="M 53 50 Q 60 74 67 100" strokeWidth="3.5"/>
+                <line x1="41" y1="72" x2="59" y2="72" strokeWidth="3.5"/>
               </svg>
             </div>
             <div className={cn("min-w-0", collapsed && "lg:hidden")}>

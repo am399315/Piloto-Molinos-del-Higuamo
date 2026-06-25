@@ -81,21 +81,13 @@ export default function LoginPage() {
 
         <div className="relative z-10 flex flex-col flex-1 px-10 lg:px-14 py-10">
           {/* Logo & brand */}
-          <div className="flex items-center gap-3 mb-auto">
-            <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-              style={{ backgroundColor: "rgba(255,255,255,0.12)", border: "1px solid rgba(255,255,255,0.18)" }}>
-              <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5" stroke="white" strokeWidth={2}>
-                <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                <path d="M2 17l10 5 10-5" />
-                <path d="M2 12l10 5 10-5" />
-              </svg>
-            </div>
-            <div>
-              <p className="font-bold text-white text-[15px] leading-tight">Molinos del Higuamo</p>
-              <p className="text-[11px] leading-tight" style={{ color: "rgba(255,255,255,0.45)" }}>
-                Sistema Inteligente de Gestión de RRHH
-              </p>
-            </div>
+          <div className="mb-auto">
+            <img
+              src="/logo-molinos.svg"
+              alt="Molinos del Higuamo"
+              className="w-40 h-auto"
+              style={{ filter: "brightness(0) invert(1)" }}
+            />
           </div>
 
           {/* Headline */}
@@ -161,18 +153,12 @@ export default function LoginPage() {
       <div className="flex-1 flex flex-col items-center justify-center px-6 py-10 sm:px-10"
         style={{ backgroundColor: "#F3F6FA" }}>
         {/* Mobile logo */}
-        <div className="flex items-center gap-3 mb-8 md:hidden">
-          <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{ backgroundColor: "#1E3A8A" }}>
-            <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5 text-white" stroke="currentColor" strokeWidth={2}>
-              <path d="M12 2L2 7l10 5 10-5-10-5z" />
-              <path d="M2 17l10 5 10-5" />
-              <path d="M2 12l10 5 10-5" />
-            </svg>
-          </div>
-          <div>
-            <p className="font-bold text-foreground text-base leading-tight">Molinos del Higuamo</p>
-            <p className="text-muted-foreground text-[11px]">Sistema Inteligente de Gestión de RRHH</p>
-          </div>
+        <div className="mb-8 md:hidden flex justify-center">
+          <img
+            src="/logo-molinos.svg"
+            alt="Molinos del Higuamo"
+            className="w-40 h-auto"
+          />
         </div>
 
         <div className="w-full max-w-sm">
